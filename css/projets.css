@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Brittany;
+    src: url(../font/Brittany.ttf);
+  }
+
+@font-face {
+    font-family: CoreBandi;
+    src: url(../font/CoreBandi.ttf);
+  }
+
+
+
+.portfolio {
+    padding: 20px;
+    margin-top: 7rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-toggle {
+    font-size: 1.2em;
+    background: #61988e;
+    color: #ffecec;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-family: CoreBandi;
+    font-size: 30px;
+    margin-bottom: 2rem;
+
+}
+.arrow {
+    float: inline-end;
+    font-size: 22px;                           
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  
+}
+
+.project {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.project span {
+    text-align: center;
+    display: block;
+    font-size: 0.9em;
+    font-family: CoreBandi;
+}
+
+ .container h1{
+    color: #052839;
+font-family: Brittany;
+text-align: center;
+font-size: 60px;
+margin: 5rem;
+font-weight: 100;
+
+ }
+
+/* Styles pour desktop */
+@media(min-width: 900px) {
+    .portfolio {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .submenu {
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .project {
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,213 @@
+/* CSS reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffecec;
+    color: #000;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: Brittany;
+    src: url(../font/Brittany.ttf);
+  }
+
+@font-face {
+    font-family: CoreBandi;
+    src: url(../font/CoreBandi.ttf);
+  }
+
+
+
+/* Header */
+
+header{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 20px 5px;
+  width: 100%;
+  background-color: #ffecec;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #ffecec; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #052839;
+    display: block;
+    transition: 0.3s;
+    font-family: CoreBandi;
+    position: relative;
+  }
+
+  .sidenav a:nth-child(2){
+    font-family: Brittany;
+    font-size: 35px;
+  }
+
+  .sidenav a:nth-child(5){
+background-color: #052839;
+padding: 8px 8px 8px 8px;
+margin-left: 1rem;
+margin-top: 1rem;
+color: #ffecec;
+width: 60%;
+text-align: center;
+border-radius: 250px;
+}
+
+.sidenav a:nth-child(5):hover{
+  background-color: #61988e;
+  color: #ffecec;
+}
+
+.bx-at{
+    font-size: 20px;
+}
+.bx-menu{
+  font-size: 45px;
+  color: #052839;
+}
+
+  
+  
+.sidenav a:hover {
+  color: #61988e;
+}
+.sidenav a::after{
+  content: '';
+transform-origin: 50 0; 
+transform: scaleX(0);
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+height: 2px; 
+background: #052839;
+z-index: -1;
+opacity: 0.8;
+transition: transform .3s;
+  
+}
+
+.sidenav a:hover::after {
+  transform: scaleX(1);
+}
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+
+  .desktop-nav {
+    display: none; 
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .desktop-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 8px 16px;
+    transition: color 0.3s;
+  }
+
+
+  .desktop-nav a:hover {
+    color: #61988e;
+  }
+
+
+  footer{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px -25px 20px -20px;
+    padding: 1rem;
+    color: #111;
+    font-size: 25px;
+    font-family: CoreBandi;
+  }
+
+
+  @media (min-width: 870px) {
+    header{
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    .sidenav {
+      display: none;
+    }
+  
+    .desktop-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #ffecec;
+
+    }
+    .desktop-nav a{
+      color: #052839;
+      font-size: 25px;
+      font-family: CoreBandi;
+    }
+    .desktop-nav a:nth-child(1){
+      font-family: Brittany;
+      font-size: 35px;
+    }
+    .desktop-nav a:nth-child(4){
+      background-color: #052839;
+      color: #ffecec;
+      text-align: center;
+      border-radius: 250px;
+    }
+    .desktop-nav a:nth-child(4):hover{
+        background-color: #61988e;
+        color: #ffecec;
+    }
+    span[onclick="openNav()"] {
+      display: none;
+    }
+
+    footer{
+      background-color: #ffecec;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px -25px 20px -20px;
+    }
+  }
+
+  .container{
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+ 
