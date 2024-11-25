@@ -28,7 +28,7 @@
 }
 
 .galerie{
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -36,6 +36,13 @@
     justify-content: center;
     margin-bottom: 4rem;
     gap:20px;
+}
+
+.galerie img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 
@@ -87,4 +94,12 @@ h2{
     align-items: center;
     margin-bottom: 4rem;
     margin-top: 2rem;
+}
+
+@media screen and (min-width: 870px) {
+.galerie img{
+    width: auto;
+    height: auto;
+}
+
 }
