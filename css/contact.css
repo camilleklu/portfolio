@@ -79,7 +79,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: #af1d29;
+    background-color: #af1d29;
     transition: .5s ease;
     display: block;
     z-index: -1;
