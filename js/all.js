@@ -44,3 +44,9 @@ backToTopButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+const goBackButton = document.getElementById("goBack");
+
+goBackButton.addEventListener("click", function () {
+  history.back(); // Va à la page précédente
+});

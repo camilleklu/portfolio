@@ -97,16 +97,41 @@ h2{
     margin-top: 2rem;
 }
 
+#goBack {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    background-color: #af1d29;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-family: CoreBandi;
+}
+
+#goBack:hover {
+    background-color: #ffecec;
+    color: #052839;
+}
+
+
+
 @media screen and (min-width: 870px) {
 .galerie img{
     width: auto;
     height: auto;
 }
-
+#goBack{
+    top: 120px;
+    left: 110px; 
+}
 .autre{
     width: 500px;
     height: 800px;
 }
-
 }
 
