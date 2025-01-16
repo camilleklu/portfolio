@@ -55,7 +55,7 @@
     flex-direction: column;
   }
 
-  .formulaire button {
+  .formulaire button, a.download {
     display: block;
     margin: 0 auto;
     width: 9em;
@@ -71,7 +71,7 @@
                 -6px -6px 12px #ffffff;
    }
    
-  .formulaire button::before {
+  .formulaire button::before , a.download::before {
     content: '';
     width: 0;
     height: 3em;
@@ -85,7 +85,7 @@
     z-index: -1;
    }
    
-   .formulaire button:hover::before {
+   .formulaire button:hover::before , a.download:hover::before {
     width: 9em;
    }
 

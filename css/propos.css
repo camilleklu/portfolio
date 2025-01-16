@@ -42,26 +42,44 @@ margin-right: auto;
 
 
 
-.cv img{
+.competences{
+  margin-top: 2vw;
   width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.competences img{
+  width: auto;
+  aspect-ratio: 2/1;
+  height: 250px;
+  object-fit: contain;
+}
+
+
+.download{
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 870px) {
-
   .description {
     width: 80%;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
   }
-  .cv img{
-    width: 50%;
+   .competences {
+    width: 70%;
+    flex-direction: row;
   }
+ 
 
 }
 
