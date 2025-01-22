@@ -45,17 +45,17 @@ margin-right: auto;
 .competences{
   margin-top: 2vw;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .competences img{
-  width: auto;
+  width: 100%;
   aspect-ratio: 2/1;
-  height: 250px;
+  height: 200px;
   object-fit: contain;
 }
 
@@ -73,16 +73,25 @@ margin-right: auto;
     width: 80%;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
   }
    .competences {
     width: 70%;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
   }
- 
+
 
 }
 
+@media screen and (min-width: 1100px){
+.competences img {
+  width: auto;
+  height: 300px; 
+}
+}
 
 
 
