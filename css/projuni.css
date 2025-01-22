@@ -61,7 +61,7 @@ p{
     text-align: start;
     font-family: CoreBandi;
     font-size: 22px;
-    width: 40%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -111,6 +111,7 @@ h2{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
     font-family: CoreBandi;
+    z-index: 1;
 }
 
 #goBack:hover {
@@ -132,6 +133,9 @@ h2{
 .autre{
     width: 500px;
     height: 800px;
+}
+p{
+    width: 40%;
 }
 }
 
