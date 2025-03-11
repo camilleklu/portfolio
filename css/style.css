@@ -158,6 +158,10 @@ transition: transform .3s;
     font-family: CoreBandi;
   }
 
+  footer p{
+    text-align: center;
+  }
+
 
   @media (min-width: 870px) {
     header{
