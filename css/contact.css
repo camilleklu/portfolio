@@ -98,7 +98,13 @@
     align-items: center;
     justify-content: space-around;
   }
-
+.ps{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: CoreBandi;
+  margin-bottom: 3rem;
+}
 
 
   

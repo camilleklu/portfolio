@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Camille Kluck</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Camille Kluck</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
 
-    <!-- HEADER -->
+  <!-- HEADER -->
 
-<header>
- 
-<div id="desktopNav" class="desktop-nav">
-    <a href="index.html">Camille Kluck</a>
-    <a href="projets.html">Mes Projets</a>
-    <a href="propos.html">À propos de moi</a>
-    <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
+  <header>
+
+    <div id="desktopNav" class="desktop-nav">
+      <a href="index.html">Camille Kluck</a>
+      <a href="projets.html">Mes Projets</a>
+      <a href="propos.html">À propos de moi</a>
+      <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Camille Kluck</a>
+      <a href="projets.html">Mes Projets</a>
+      <a href="propos.html">À propos de moi</a>
+      <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
+    </div>
+
+    <span onclick="openNav()"><i class='bx bx-menu'></i></span>
+
+  </header>
+
+  <!-- CONTENT  -->
+
+
+  <div class="container">
+
+
+    <div class="formulaire">
+      <h2>Formulaire de contact</h2>
+
+      <form action="https://formspree.io/f/xpwzdwjz" method="POST">
+
+        <label>
+          <input type="email" placeholder="Email" class="input" name="email">
+        </label>
+
+        <label>
+          <textarea class="input" placeholder="Message" name="message"></textarea>
+        </label>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="reseaux">
+      <a href="https://www.linkedin.com/in/camille-kluck-611a71330/"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61551054561327"><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://github.com/camilleklu"><i class='bx bxl-github'></i></a>
+    </div>
+
+
   </div>
 
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Camille Kluck</a>
-    <a href="projets.html">Mes Projets</a>
-    <a href="propos.html">À propos de moi</a>
-    <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
-</div>
-
-<span onclick="openNav()"><i class='bx bx-menu'></i></span>
-
-</header> 
-
-<!-- CONTENT  -->
+  <h1 class="ps">PS : si vous m'appeler un petit SMS avant serait sympa 🥺</h1>
 
 
-<div class="container">
+  <!-- FOOTER  -->
 
 
-<div class="formulaire">
-<h2>Formulaire de contact</h2>
-
-<form action="https://formspree.io/f/xpwzdwjz" method="POST">
-
-  <label>
-    <input type="email" placeholder="Email" class="input" name="email">
-  </label>
-
-  <label>
-    <textarea class="input" placeholder="Message" name="message"></textarea>
-  </label>
-  
-  <button type="submit">Envoyer</button>
-</form>
-</div>
-
-<div class="reseaux">
-<a href="https://www.linkedin.com/in/camille-kluck-611a71330/"><i class='bx bxl-linkedin-square'></i></a>
-<a href="https://www.facebook.com/profile.php?id=61551054561327"><i class='bx bxl-facebook-circle' ></i></a>
-<a href="https://github.com/camilleklu"><i class='bx bxl-github' ></i></a>
-</div>
+  <footer>
+    <p>Ce site a été créé par Camille Kluck</p>
+  </footer>
 
 
-</div>
+  <button id="backToTop" title="Retour en haut">↑</button>
+  <script src="./js/all.js"></script>
+</body>
 
-
-
-    <!-- FOOTER  -->
-
-
-<footer>
-    <p>Ce site a été créé par Camille Kluck</p>    </footer>
-
-    
-    <button id="backToTop" title="Retour en haut">↑</button>
-    <script src="./js/all.js"></script>
-    </body>
-    </html>
+</html>
