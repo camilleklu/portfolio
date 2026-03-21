@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Camille Kluck</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/projuni.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div id="desktopNav" class="desktop-nav">
+            <a href="index.html">Camille Kluck</a>
+            <a href="projets.html">Mes Projets</a>
+            <a href="propos.html">À propos de moi</a>
+            <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
+        </div>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Camille Kluck</a>
+            <a href="projets.html">Mes Projets</a>
+            <a href="propos.html">À propos de moi</a>
+            <a href="contact.html"><i class='bx bx-at'></i> Contact</a>
+        </div>
+
+        <span onclick="openNav()"><i class='bx bx-menu'></i></span>
+
+    </header>
+
+    <div class="container">
+        <button id="goBack" title="Retour à la page précédente">← Retour</button>
+
+
+        <h1>Stage chez PROMOD</h1>
+
+        <p>Durant ce stage, j'ai eu l'opportunité de travailler sur un projet de recherche grâce à une image sur le site
+            e-commerce de PROMOD.</p>
+        <p>Avec les précieux conseils de l'équipe qui travaille sur le site e-commerce de PROMOD, j'ai pu approfondir
+            mes connaissances en matière de développement web.</p>
+        <p><strong>Outils utilisés</strong> : Nuxt 3, SCSS, TypeScript et Vue.js</p>
+
+        <p style="margin-top: 2rem; font-size: 1.75rem;"><strong>Voici le rapport du stage produit :</strong></p>
+        <iframe src="./images/Rapport de stage Kluck Camille.pdf" class="pdf"></iframe>
+
+
+
+
+
+    </div>
+    <footer>
+        <p>Ce site a été créé par Camille Kluck</p>
+    </footer>
+
+    <button id="backToTop" title="Retour en haut">↑</button>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
